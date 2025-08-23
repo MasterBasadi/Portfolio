@@ -1,12 +1,42 @@
-# React + Vite
+# Portfolio 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with **React, Vite, and Tailwind CSS** to showcase my projects, resume, and contact links.  
+Deployed with **Vercel** for fast, free hosting and continuous deployment.
 
-Currently, two official plugins are available:
+## 🚀 Demo
+- **Live site:** [https://your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)  
+- **Resume (PDF):** [Download Here](./public/Basit_Umair_Resume.pdf)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Responsive single-page portfolio design (mobile-friendly)
+- Projects section highlighting **BookTrackr** and future work
+- Contact section with GitHub, LinkedIn, and one-click email copy
+- Resume button linking to latest PDF
+- Built with reusable React components + Tailwind styling
+- Auto-deploys via GitHub → Vercel pipeline
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- **Frontend:** React (Vite), Tailwind CSS, lucide-react icons  
+- **DevOps:** Vercel (hosting), GitHub Actions (optional CI/CD)  
+- **Other:** Node.js, npm  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Projects Showcased
+### BookTrackr 📚
+- Full-stack Spring Boot app for managing textbook inventory, loans, and returns
+- Tech: Java, Spring Boot, Thymeleaf, PostgreSQL
+- Repo: [BookTrackr GitHub](https://github.com/MasterBasadi/booktrackr)
+
+### Portfolio 🌐
+- This site itself — built with React + Tailwind, deployed on Vercel
+- Repo: [Portfolio GitHub](https://github.com/MasterBasadi/portfolio)
+
+## ⚡ Getting Started (Local Development)
+```bash
+# clone the repo
+git clone https://github.com/YourUsername/portfolio.git
+cd portfolio
+
+# install dependencies
+npm install
+# run dev server
+npm run dev
