@@ -4,7 +4,7 @@ A personal portfolio website built with **React, Vite, and Tailwind CSS** to sho
 Deployed with **Vercel** for fast, free hosting and continuous deployment.
 
 ## 🚀 Demo
-- **Live site:** [https://your-vercel-url.vercel.app](https://portfolio-blush-six-52.vercel.app)  
+- **Live site:** [https://basitumair-portfolio.vercel.app/]  
 - **Resume (PDF):** [Download Here](./public/Basit_Umair_Resume.pdf)
 
 ## ✨ Features
