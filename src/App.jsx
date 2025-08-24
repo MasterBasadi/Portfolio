@@ -70,7 +70,7 @@ export default function Portfolio() {
                             </a>
                             <a
                                 className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700 hover:border-neutral-500"
-                                href="https://.linkedin.com/in/basit-umair-358066311" target="_blank" rel="noreferrer"
+                                href="https://linkedin.com/in/basit-umair-358066311" target="_blank" rel="noreferrer"
                             >
                                 <Linkedin className="w-4 h-4"/> LinkedIn
                             </a>
