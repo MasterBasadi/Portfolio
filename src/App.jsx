@@ -50,7 +50,7 @@ export default function Portfolio() {
                             CS @ Carleton • Full‑stack builder • Interested in AI & aviation
                         </h1>
                         <p className="mt-4 text-neutral-300">
-                            I like helping people. Just finished building <span className="font-medium">BookTrackr</span> in Java/Spring Boot
+                            I love the idea of building software to help people. I just finished building <span className="font-medium">BookTrackr</span> in Java/Spring Boot
                             and learning Python to dive into the world AI.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-3">
