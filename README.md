@@ -33,7 +33,7 @@ Deployed with **Vercel** for fast, free hosting and continuous deployment.
 ## ⚡ Getting Started (Local Development)
 ```bash
 # clone the repo
-git clone https://github.com/YourUsername/portfolio.git
+git clone https://github.com/MasterBasadi/portfolio.git
 cd portfolio
 
 # install dependencies
