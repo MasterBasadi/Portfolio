@@ -57,6 +57,8 @@ export default function Portfolio() {
                             <a
                                 className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white text-neutral-900 font-medium shadow hover:opacity-90"
                                 href="/Basit Umair Resume.pdf"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <Rocket className="w-4 h-4"/> Resume
                             </a>
