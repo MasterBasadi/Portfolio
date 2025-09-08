@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, ExternalLink, BookOpenCheck, Rocket } from "luc
 
 export default function Portfolio() {
     const [copied, setCopied] = useState(false);
-    const email = "basitumair23@outlook.com";
+    const email = "basitumair751@gmail.com";
 
     const copyEmail = async () => {
         try {
