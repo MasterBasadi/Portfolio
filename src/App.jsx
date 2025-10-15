@@ -10,7 +10,6 @@ export default function Portfolio() {
             await navigator.clipboard.writeText(email);
             setCopied(true);
             setTimeout(() => setCopied(false), 1600);
-            // eslint-disable-next-line no-unused-vars
         } catch (e) { /* empty */ }
     };
 
@@ -47,11 +46,11 @@ export default function Portfolio() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                            CS @ Carleton • Full‑stack builder • Interested in AI & aviation
+                            CS @ Carleton • Full‑stack builder • Interested in AI
                         </h1>
                         <p className="mt-4 text-neutral-300">
-                            I love the idea of building software to help people. I just finished building <span className="font-medium">BookTrackr</span> in Java/Spring Boot
-                            and learning Python to dive into the world AI.
+                            I love the idea of building software to help people. I just finished building <span className="font-medium">BookTrackr</span> in Java/Spring Boot.
+                            Now I'm learning Python to dive into the world AI.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-3">
                             <a
@@ -87,7 +86,7 @@ export default function Portfolio() {
                         <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
                             {[
                                 "Java", "Spring Boot", "Thymeleaf", "PostgreSQL",
-                                "Maven", "Python", "Linux", "JavaScript (learning)"
+                                "Maven", "JavaScript", "Linux", "Python (learning)"
                             ].map((t) => (
                                 <li key={t} className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-900/60">{t}</li>
                             ))}
@@ -135,7 +134,7 @@ export default function Portfolio() {
                 <h2 className="text-2xl md:text-3xl font-semibold">About</h2>
                 <p className="mt-4 text-neutral-300 leading-relaxed">
                     First‑year CS at Carleton.
-                    I’m learning React/JavaScript and interested in artificial intelligence & aviation. Looking for student teams where I can ship features fast
+                    I’m learning Python and interested in artificial intelligence. Looking for student teams where I can ship features fast
                     and learn from code reviews.
                 </p>
             </section>
