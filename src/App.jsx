@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { Github, Linkedin, Mail, ExternalLink, BookOpenCheck, Rocket } from "lucide-react";
+import {Github, Linkedin, Mail, ExternalLink, BookOpenCheck, Rocket, MonitorCogIcon} from "lucide-react";
 
 export default function Portfolio() {
     const [copied, setCopied] = useState(false);
     const email = "basitumair751@gmail.com";
 
     const copyEmail = async () => {
-        try {
             await navigator.clipboard.writeText(email);
             setCopied(true);
             setTimeout(() => setCopied(false), 1600);
-        } catch (e) { /* empty */ }
     };
 
     const projects = [
@@ -24,6 +22,17 @@ export default function Portfolio() {
                 repo: "https://github.com/MasterBasadi/Booktrackr",
             },
             icon: <BookOpenCheck className="w-6 h-6"/>,
+        },
+        {
+            title: "NFLRadar",
+            tagline: "Predictive Sports Analytics Tool",
+            tech: ["Python", "BeautifulSoup", "Pandas", "Scikit-learn", "XGBoost", "Matplotlib"],
+            description:
+                "NFLRadar — an AI-powered NFL prediction system that forecasts game outcomes and team stats using Python, XGBoost, and 5 years of real league data.",
+            links: {
+                repo: "https://github.com/MasterBasadi/NFLRadar",
+            },
+            icon: <MonitorCogIcon className="w-6 h-6"/>,
         },
     ];
 
@@ -46,11 +55,10 @@ export default function Portfolio() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                            CS @ Carleton • Full‑stack builder • Interested in AI
+                            CS @ Carleton
                         </h1>
                         <p className="mt-4 text-neutral-300">
-                            I love the idea of building software to help people. I just finished building <span className="font-medium">BookTrackr</span> in Java/Spring Boot.
-                            Now I'm learning Python to dive into the world AI.
+                            I enjoy building systems that turn messy data into insight. I recently built NFLRadar, an AI model that predicts NFL game outcomes using real stats and XGBoost. Now I’m diving into machine learning, and statistics.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-3">
                             <a
@@ -86,7 +94,7 @@ export default function Portfolio() {
                         <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
                             {[
                                 "Java", "Spring Boot", "Thymeleaf", "PostgreSQL",
-                                "Maven", "JavaScript", "Linux", "Python (learning)"
+                                "Maven", "JavaScript", "Linux", "Python", "Pandas", "Scikit-learn", "XGBoost", "Matplotlib"
                             ].map((t) => (
                                 <li key={t} className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-900/60">{t}</li>
                             ))}
@@ -133,9 +141,7 @@ export default function Portfolio() {
             <section id="about" className="max-w-5xl mx-auto px-4 py-12">
                 <h2 className="text-2xl md:text-3xl font-semibold">About</h2>
                 <p className="mt-4 text-neutral-300 leading-relaxed">
-                    First‑year CS at Carleton.
-                    I’m learning Python and interested in artificial intelligence. Looking for student teams where I can ship features fast
-                    and learn from code reviews.
+                    Computer Science @ Carleton — passionate about AI, data science, and algorithmic systems. I’m building a foundation in ML and software engineering to eventually work on smarter, data-driven products.
                 </p>
             </section>
 
@@ -143,10 +149,10 @@ export default function Portfolio() {
             <section id="contact" className="max-w-5xl mx-auto px-4 pb-16">
                 <div className="border border-neutral-800 rounded-2xl p-6 bg-neutral-900/40">
                     <h2 className="text-2xl md:text-3xl font-semibold">Contact</h2>
-                    <p className="mt-3 text-neutral-300">Email me. Open to student dev roles, and collabs.</p>
+                    <p className="mt-3 text-neutral-300">Email me. Open to internship opportunities, student dev roles, and collabs.</p>
                     <div className="mt-4 flex gap-3">
                         <a className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700 hover:border-neutral-500" href="https://github.com/MasterBasadi" target="_blank" rel="noreferrer"><Github className="w-4 h-4"/> GitHub</a>
-                        <a className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700 hover:border-neutral-500" href="https://linkedin.com/in/basit-umair-358066311" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4"/> LinkedIn</a>
+                        <a className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700 hover:border-neutral-500" href="https://www.linkedin.com/in/basitumair/" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4"/> LinkedIn</a>
                         <button onClick={copyEmail} className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700 hover:border-neutral-500"><Mail className="w-4 h-4"/> {copied ? "Copied!" : email}</button>
                     </div>
                 </div>
